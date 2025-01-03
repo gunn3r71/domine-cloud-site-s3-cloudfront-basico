@@ -1,0 +1,72 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+  height: 100%; /* Garante que o body ocupe toda a altura */
+}
+
+body {
+  display: flex;
+  flex-direction: column; /* Flexbox para estruturar o layout */
+  min-height: 100vh; /* Garante que o body ocupe a altura total da viewport */
+}
+
+header {
+  background: #0073e6;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+main {
+  flex: 1; /* Faz o main ocupar o espaço restante */
+  padding: 2rem;
+}
+
+section {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background: #333;
+  color: rgb(255, 255, 255);
+  margin-top: auto; /* Garante que o rodapé fique no final */
+}
+
+.infoLink {
+  color: rgb(255, 255, 255);
+}
+
+.infoLink:hover {
+  color: rgb(122, 121, 121);
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  main {
+    padding: 1rem;
+  }
+
+  section {
+    padding: 1rem;
+  }
+}
