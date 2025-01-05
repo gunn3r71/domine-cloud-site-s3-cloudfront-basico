@@ -1,8 +1,8 @@
 data "aws_iam_policy_document" "this" {
   statement {
-    sid = "AllowCloudFrontAccess"
+    sid       = "AllowCloudFrontAccess"
     actions   = ["s3:GetObject"]
-    resources = [ "${aws_s3_bucket.this.arn}/*" ]
+    resources = ["${aws_s3_bucket.this.arn}/*"]
     principals {
       type        = "AWS"
       identifiers = [aws_cloudfront_origin_access_identity.this.iam_arn]
